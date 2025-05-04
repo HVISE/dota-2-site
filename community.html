@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сообщество | Dota 2 Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icons8-дота-2.svg">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="img/2_var_logo.png" alt="Логотип Dota 2" class="logo-img">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="heroes.html">Герои</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="community.html">Сообщество</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="community" class="community-section">
+            <h2>Сообщество</h2>
+            <p>Присоединяйтесь к нашему сообществу и общайтесь с другими игроками!</p>
+            <form id="contact-form">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mmr">MMR (рейтинг):</label>
+                <input type="number" id="mmr" name="mmr" min="0" required>
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+            <div class="rating-table-container">
+                <table class="rating-table">
+                    <thead>
+                        <tr>
+                            <th>Имя (Никнейм)</th>
+                            <th>Рейтинг (MMR)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Здесь будут динамически добавляться строки -->
+                        <tr>
+                            <td>Игрок 1</td>
+                            <td>5000</td>
+                        </tr>
+                        <tr>
+                            <td>Игрок 2</td>
+                            <td>4900</td>
+                        </tr>
+                        <!-- Дополнительные строки -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Dota 2 Portal. Все права защищены.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

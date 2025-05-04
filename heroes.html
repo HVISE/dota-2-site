@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Герои | Dota 2 Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icons8-дота-2.svg">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="img/2_var_logo.png" alt="Логотип Dota 2" class="logo-img">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="heroes.html">Герои</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="community.html">Сообщество</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="heroes" class="heroes-section">
+            <h2>Герои</h2>
+            <div class="heroes-grid" id="heroes-grid">
+                <!-- Иконки героев -->
+                <div class="hero-icon">
+                    <img src="img/axe.png" alt="Герой Axe" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Axe</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/juggernaut.png" alt="Герой Juggernaut" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Juggernaut</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/lina.png" alt="Герой Lina" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Lina</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/mirana.png" alt="Герой Mirana" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Mirana</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/lycan.png" alt="Герой Lycan" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Lycan</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/naga_siren.png" alt="Герой Naga Siren" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Naga Siren</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/invoker.png" alt="Герой Invoker" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Invoker</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/puck.png" alt="Герой Puck" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Puck</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/ember_spirit.png" alt="Герой Ember Spirit" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Ember Spirit</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/abaddon.png" alt="Герой Abaddon" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Abaddon</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/alchemist.png" alt="Герой Alchemist" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Alchemist</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/ancient_apparition.png" alt="Герой Ancient Apparition" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Ancient Apparition</span>
+                </div>
+                <div class="hero-icon" onclick="showHeroGuide('Anti-Mage')">
+                    <img src="img/anti-mage.png" alt="Герой Anti-Mage" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span><a href="anti-mage-guide.html">Anti-Mage</a></span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/arc_warden.png" alt="Герой Arc Warden" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Arc Warden</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/bane.png" alt="Герой Bane" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Bane</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/batrider.png" alt="Герой Batrider" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Batrider</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/beastmaster.png" alt="Герой Beastmaster" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Beastmaster</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/bloodseeker.png" alt="Герой Bloodseeker" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Bloodseeker</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/bounty_hunter.png" alt="Герой Bounty Hunter" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Bounty Hunter</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/brewmaster.png" alt="Герой Brewmaster" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Brewmaster</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/bristleback.png" alt="Герой Bristleback" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Bristleback</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/broodmother.png" alt="Герой Broodmother" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Broodmother</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/centaur_warrunner.png" alt="Герой Centaur Warrunner" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Centaur Warrunner</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/chaos_knight.png" alt="Герой Chaos Knight" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Chaos Knight</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/chen.png" alt="Герой Chen" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Chen</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/clinkz.png" alt="Герой Clinkz" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Clinkz</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/clockwerk.png" alt="Герой Clockwerk" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Clockwerk</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/crystal_maiden.png" alt="Герой Crystal Maiden" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Crystal Maiden</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/dark_seer.png" alt="Герой Dark Seer" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Dark Seer</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/dark_willow.png" alt="Герой Dark Willow" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Dark Willow</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/dawnbreaker.png" alt="Герой Dawnbreaker" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Dawnbreaker</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/dazzle.png" alt="Герой Dazzle" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Dazzle</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/death_prophet.png" alt="Герой Death Prophet" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Death Prophet</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/disruptor.png" alt="Герой Disruptor" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Disruptor</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/doom.png" alt="Герой Doom" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Doom</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/dragon_knight.png" alt="Герой Dragon Knight" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Dragon Knight</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/drow_ranger.png" alt="Герой Drow Ranger" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Drow Ranger</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/earth_spirit.png" alt="Герой Earth Spirit" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Earth Spirit</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/earthshaker.png" alt="Герой Earthshaker" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Earthshaker</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/elder_titan.png" alt="Герой Elder Titan" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Elder Titan</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/enchantress.png" alt="Герой Enchantress" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Enchantress</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/enigma.png" alt="Герой Enigma" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Enigma</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/faceless_void.png" alt="Герой Faceless Void" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Faceless Void</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/grimstroke.png" alt="Герой Grimstroke" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Grimstroke</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/gyrocopter.png" alt="Герой Gyrocopter" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Gyrocopter</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/huskar.png" alt="Герой Huskar" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Huskar</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/io.png" alt="Герой Io" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Io</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/jakiro.png" alt="Герой Jakiro" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Jakiro</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/keeper_of_the_light.png" alt="Герой Keeper of the Light" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Keeper of the Light</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/kunkka.png" alt="Герой Kunkka" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Kunkka</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/legion_commander.png" alt="Герой Legion Commander" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Legion Commander</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/leshrac.png" alt="Герой Leshrac" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Leshrac</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/lich.png" alt="Герой Lich" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Lich</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/lifestealer.png" alt="Герой Lifestealer" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Lifestealer</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/lion.png" alt="Герой Lion" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Lion</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/lone_druid.png" alt="Герой Lone Druid" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Lone Druid</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/luna.png" alt="Герой Luna" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Luna</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/magnus.png" alt="Герой Magnus" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Magnus</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/mars.png" alt="Герой Mars" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Mars</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/medusa.png" alt="Герой Medusa" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Medusa</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/meepo.png" alt="Герой Meepo" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Meepo</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/nyx_assassin.png" alt="Герой Nyx Assassin" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Nyx Assassin</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/ogre_magi.png" alt="Герой Ogre Magi" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Ogre Magi</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/omniknight.png" alt="Герой Omniknight" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Omniknight</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/oracle.png" alt="Герой Oracle" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Oracle</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/outworld_destroyer.png" alt="Герой Outworld Destroyer" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Outworld Destroyer</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/phoenix.png" alt="Герой Phoenix" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Phoenix</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/pudge.png" alt="Герой Pudge" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Pudge</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/pugna.png" alt="Герой Pugna" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Pugna</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/queen_of_pain.png" alt="Герой Queen of Pain" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Queen of Pain</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/riki.png" alt="Герой Riki" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Riki</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/rubick.png" alt="Герой Rubick" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Rubick</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/sand_king.png" alt="Герой Sand King" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Sand King</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/shadow_demon.png" alt="Герой Shadow Demon" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Shadow Demon</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/shadow_fiend.png" alt="Герой Shadow Fiend" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Shadow Fiend</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/shadow_shaman.png" alt="Герой Shadow Shaman" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Shadow Shaman</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/silencer.png" alt="Герой Silencer" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Silencer</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/skywrath_mage.png" alt="Герой Skywrath Mage" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Skywrath Mage</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/slardar.png" alt="Герой Slardar" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Slardar</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/slark.png" alt="Герой Slark" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Slark</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/sniper.png" alt="Герой Sniper" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Sniper</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/spectre.png" alt="Герой Spectre" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Spectre</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/spirit_breaker.png" alt="Герой Spirit Breaker" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Spirit Breaker</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/storm_spirit.png" alt="Герой Storm Spirit" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Storm Spirit</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/sven.png" alt="Герой Sven" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Sven</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/techies.png" alt="Герой Techies" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Techies</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/templar_assassin.png" alt="Герой Templar Assassin" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Templar Assassin</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/terrorblade.png" alt="Герой Terrorblade" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Terrorblade</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/tidehunter.png" alt="Герой Tidehunter" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Tidehunter</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/timbersaw.png" alt="Герой Timbersaw" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Timbersaw</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/tinker.png" alt="Герой Tinker" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Tinker</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/tiny.png" alt="Герой Tiny" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Tiny</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/treant_protector.png" alt="Герой Treant Protector" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Treant Protector</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/troll_warlord.png" alt="Герой Troll Warlord" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Troll Warlord</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/tusk.png" alt="Герой Tusk" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Tusk</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/underlord.png" alt="Герой Underlord" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Underlord</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/undying.png" alt="Герой Undying" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Undying</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/ursa.png" alt="Герой Ursa" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Ursa</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/vengeful_spirit.png" alt="Герой Vengeful Spirit" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Vengeful Spirit</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/venomancer.png" alt="Герой Venomancer" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Venomancer</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/viper.png" alt="Герой Viper" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Viper</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/visage.png" alt="Герой Visage" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Visage</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/warlock.png" alt="Герой Warlock" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Warlock</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/weaver.png" alt="Герой Weaver" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Weaver</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/windrunner.png" alt="Герой Windrunner" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Windrunner</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/wisp.png" alt="Герой Wisp" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Wisp</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/witch_doctor.png" alt="Герой Witch Doctor" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Witch Doctor</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/wraith_king.png" alt="Герой Wraith King" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Wraith King</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/zeus.png" alt="Герой Zeus" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Zeus</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/antimage.png" alt="Герой Antimage" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Antimage</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/bloodseeker.png" alt="Герой Bloodseeker" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Bloodseeker</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/crystal_maiden.png" alt="Герой Crystal Maiden" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Crystal Maiden</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/drow_ranger.png" alt="Герой Drow Ranger" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Drow Ranger</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/earthshaker.png" alt="Герой Earthshaker" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Earthshaker</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/shadow_fiend.png" alt="Герой Shadow Fiend" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Shadow Fiend</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/puck.png" alt="Герой Puck" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Puck</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/pudge.png" alt="Герой Pudge" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Pudge</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/razor.png" alt="Герой Razor" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Razor</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/storm_spirit.png" alt="Герой Storm Spirit" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Storm Spirit</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/sven.png" alt="Герой Sven" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Sven</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/vengeful_spirit.png" alt="Герой Vengeful Spirit" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Vengeful Spirit</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/zuus.png" alt="Герой Zuus" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Zuus</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/kunkka.png" alt="Герой Kunkka" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Kunkka</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/windrunner.png" alt="Герой Windrunner" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Windrunner</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/sand_king.png" alt="Герой Sand King" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Sand King</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/lina.png" alt="Герой Lina" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Lina</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/lion.png" alt="Герой Lion" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Lion</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/shadow_shaman.png" alt="Герой Shadow Shaman" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Shadow Shaman</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/slardar.png" alt="Герой Slardar" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Slardar</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/tidehunter.png" alt="Герой Tidehunter" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Tidehunter</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/witch_doctor.png" alt="Герой Witch Doctor" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Witch Doctor</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/lich.png" alt="Герой Lich" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Lich</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/riki.png" alt="Герой Riki" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Riki</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/enigma.png" alt="Герой Enigma" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Enigma</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/necrophos.png" alt="Герой Necrophos" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Necrophos</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/sniper.png" alt="Герой Sniper" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Sniper</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/warlock.png" alt="Герой Warlock" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Warlock</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/beastmaster.png" alt="Герой Beastmaster" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Beastmaster</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/queen_of_pain.png" alt="Герой Queen of Pain" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Queen of Pain</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/venomancer.png" alt="Герой Venomancer" onerror="this.onerror=null; this.src='img/default.png';">
+                    <span>Venomancer</span>
+                </div>
+                <div class="hero-icon">
+                    <img src="img/faceless_void.png" alt="Герой
+                    

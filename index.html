@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dota 2 Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icons8-дота-2.svg">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="img/2_var_logo.png" alt="Логотип Dota 2" class="logo-img">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="heroes.html">Герои</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="community.html">Сообщество</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Секция с видео-фоном -->
+        <section class="hero-section" id="hero">
+            <div class="video-overlay"></div>
+            <video autoplay muted loop id="video-bg">
+                <source src="img/fon.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+            <div class="hero-content">
+                <h1>Добро пожаловать в мир Dota 2</h1>
+                <p>Присоединяйтесь к тысячам энтузиастов и покоряйте вершины!</p>
+                <a href="#heroes" class="btn">Узнать больше</a>
+            </div>
+        </section>
+        <!-- Секция героев -->
+        <section id="heroes" class="heroes-section">
+            <h2><a href="heroes.html">Герои</a></h2>
+            <div class="hero-conveyor" id="hero-conveyor">
+                <!-- Видеофон -->
+                <video autoplay muted loop id="video-bg-hero">
+                    <source src="img/1673480789-1673480789-dota-2-ti9-aegis.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+                <!-- Перекрытие видео фильтром -->
+                <div class="video-overlay"></div>
+                <!-- Основное содержимое слайдера -->
+                <div class="hero-conveyor-scroll">
+                    <!-- Здесь будут элементы слайдера -->
+                </div>
+            </div>
+        </section>
+        <!-- Секция новостей -->
+        <section id="news" class="news-section">
+            <video autoplay muted loop>
+                <source src="img/1673480890-1673480890-dota-2-crystal-maiden-pc.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>Новости</h2>
+            <div class="news-grid">
+                
+                <div class="news-card small-news-card-one">
+                    <h3>Новый патч 7.38</h3>
+                    <p>
+                        Окунитесь в вольные воды в обновлении 7.38. Отдайтесь воле течений, чтобы поскорее добраться до лёгкой линии. 
+                        Возьмите судьбу в свои руки, создавая нейтральные предметы. С головой окунитесь в поток изменений и нововведений.
+                    </p>
+                    <a href="news/patch_7_38.html" class="btn">Подробнее</a>
+                </div>
+                
+                <div class="news-card small-news-card-two">
+                    <h3>Киберспортивные события</h3>
+                    <p>В ближайшее время запланированы несколько крупных киберспортивных турниров по Dota 2:</p>
+                    <ul>
+                        <li>
+                            <strong>The International 2026:</strong> Один из самых крупных турниров года, который состоится в июле 2026 года. 
+                            Призовой фонд составляет около $40 миллионов.
+                        </li>
+                        <li>
+                            <strong>ESL One Cologne 2025:</strong> Турнир состоится с 17 по 22 октября 2025 года в Колонне, Германия. 
+                            Призовой фонд составляет около $1 миллиона.
+                        </li>
+                        <li>
+                            <strong>MDL Changsha Major 2025:</strong> Турнир состоится с 1 по 8 ноября 2025 года в Чаншае, Китай. 
+                            Призовой фонд составляет около $1 миллиона.
+                        </li>
+                        <li>
+                            <strong>OG Dota Cup 2025:</strong> Турнир состоится с 16 по 19 ноября 2025 года в Бангкоке, Таиланд. 
+                            Призовой фонд составляет около $500 тысяч.
+                        </li>
+                    </ul>
+                    <p>
+                        Следите за последними новостями и результатами турниров на 
+                        <a href="https://www.dota2.com" target="_blank" rel="noopener noreferrer">официальном сайте Dota 2</a>.
+                    </p>
+                </div>
+        </section>
+        <!-- Секция сообщества -->
+        <section id="community" class="community-section">
+            <h2>Сообщество</h2>
+            <p>Присоединяйтесь к нашему сообществу и общайтесь с другими игроками!</p>
+            <form id="contact-form">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Dota 2 Portal. Все права защищены.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

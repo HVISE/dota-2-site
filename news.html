@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости | Dota 2 Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icons8-дота-2.svg">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="img/2_var_logo.png" alt="Логотип Dota 2" class="logo-img">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="heroes.html">Герои</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="community.html">Сообщество</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="news" class="news-section">
+            <video autoplay muted loop>
+                <source src="img/patch738_header.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>Новости</h2>
+            <div class="news-grid">
+                <div class="news-card small-news-card-one">
+                    <h3>Новый патч 7.38</h3>
+                    <p>
+                        Окунитесь в вольные воды в обновлении 7.38. Отдайтесь воле течений, чтобы поскорее добраться до лёгкой линии. 
+                        Возьмите судьбу в свои руки, создавая нейтральные предметы. С головой окунитесь в поток изменений и нововведений.
+                    </p>
+                    <a href="#" class="btn" onclick="openModal()">Подробнее</a>
+                </div>
+                <div class="news-card small-news-card-two">
+                    <h3>Киберспортивные события</h3>
+                    <p>В ближайшее время запланированы несколько крупных киберспортивных турниров по Dota 2:</p>
+                    <ul>
+                        <li>
+                            <strong>The International 2026:</strong> Один из самых крупных турниров года, который состоится в июле 2026 года. 
+                            Призовой фонд составляет около $40 миллионов.
+                        </li>
+                        <li>
+                            <strong>ESL One Cologne 2025:</strong> Турнир состоится с 17 по 22 октября 2025 года в Колонне, Германия. 
+                            Призовой фонд составляет около $1 миллиона.
+                        </li>
+                        <li>
+                            <strong>MDL Changsha Major 2025:</strong> Турнир состоится с 1 по 8 ноября 2025 года в Чаншае, Китай. 
+                            Призовой фонд составляет около $1 миллиона.
+                        </li>
+                        <li>
+                            <strong>OG Dota Cup 2025:</strong> Турнир состоится с 16 по 19 ноября 2025 года в Бангкоке, Таиланд. 
+                            Призовой фонд составляет около $500 тысяч.
+                        </li>
+                    </ul>
+                    <p>
+                        Следите за последними новостями и результатами турниров на 
+                        <a href="https://www.dota2.com" target="_blank" rel="noopener noreferrer">официальном сайте Dota 2</a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">×</span>
+                <h2>Детали патча 7.38</h2>
+                <p>Общие изменения</p>
+                <p>Основные механики</p>
+                <p>Множитель урона у универсальных героев уменьшен с 0,7 до 0,45 за каждый атрибут.</p>
+                <!-- Добавьте остальные детали патча здесь -->
+                <button class="btn" onclick="closeModal()">Закрыть</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Dota 2 Portal. Все права защищены.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
